@@ -1,0 +1,158 @@
+.section-checkout{
+    display:block;
+    max-width:1200px;
+    margin-right:auto;
+    margin-left:auto;
+    padding-top:60px;
+	padding-bottom:50px;
+	padding-left: 24px;
+    padding-right: 24px;
+	font-size:16px;
+	line-height: 22px;
+	align-items:center;
+}
+
+
+
+
+
+.container-checkout{
+    display:block;
+    height:100%;
+    max-width:1200px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-size:16px;
+    /* align-items:center; */
+    margin-right: auto;
+    margin-left: auto;
+    border:2px solid blue;
+    
+}
+
+
+.column-labels {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.container-cart-item{
+    display:flex;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+
+
+.item {
+    display: flex;
+    width:100%
+    border: 1px solid red;
+    /* position: relative; */
+}
+
+
+
+.product-image,
+.item-image{
+    width: 15%;
+    float:left;
+    /* margin-right: 2em; */
+}
+
+.item-image img{
+    width:50%;
+    max-height:100px;
+    
+}
+
+
+
+.product-details, 
+.item-name{
+    width: 30%;
+    float:left;
+}
+
+.product-price,
+.item-price{
+    width: 15%;
+    float:left;
+}
+
+
+.product-quantity,
+.item-quantity{
+    width: 15%;
+    float:left;
+}
+
+.product-line-price,
+.subtotal{
+    width: 25%;
+    float:left;
+}
+
+
+.product-remove,
+.item-remove{
+    width: 20px;
+    margin-left:100px;
+}
+
+
+
+
+
+.container-total{
+    display:flex;
+    flex-direction: column;
+    border:1px solid red;
+    float:right;
+    clear: both;
+    width:25%
+
+}
+
+.total{
+    float: right;
+    display:block;
+    clear: both;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.total-label{
+    float:left;
+    width:79%
+} */
+
+
+.total-value{
+    float: right;
+    clear: both;
+    width: 21%;
+    margin-bottom: 10px; */
+}
+
+
+.btn-checkout{
+float:right;
+ width:100%;
+ font-size:16px; 
+ text-align:center;
+ border: 0;
+ padding: 6 25 6 25;
+  background-color: #F3E5AB;
+  color: black;
+}
+  /* border-radius: 3px; */
+
+
+.btn-checkout:hover {
+  background-color:gray;
+  color:white;
+  
+}

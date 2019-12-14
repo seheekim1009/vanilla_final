@@ -1,0 +1,124 @@
+
+/*Subscirption*/
+
+.section-subscribe{
+	background-color: #363636;
+	padding-top:40px;
+	padding-bottom:50px;
+	font-size:16px;
+	line-height: 22px;
+	display:block;
+}
+
+.container-subscribe{
+	display:flex;
+	width: 100%;
+	padding:40 40 20 40;
+	background-color: #363636d;
+	align-items: center;
+	justify-content: center;
+}
+
+.subscribe-headline{
+    display:block;
+    position:static;
+    font-size:28px;
+	font-weight: 600;
+	text-align: center;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    text-transform: uppercase;
+    color:#fff
+
+}
+
+.message-w-deco-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-message{
+    font-size:16px;
+    display:block;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    font-size: 16px;
+    text-align:center;
+    color:#fff
+}
+
+.form-deco-line{
+	display:inline-block;
+	width:30px;
+	height:1px;
+	background-color: #F3E5AB;
+}
+
+.form-block{
+	display:block;
+	margin-right:auto;
+	margin-bottom:0px;
+	margin-left:auto;
+}
+
+#form-subscribe {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	font-size:16px;
+	line-height: 28px;
+	flex-direction: column;
+}
+
+.text-field-input {
+	width:350px;
+	height:54px;
+	border-color:#fff;
+	background-color: transparent;
+	font-size:12px;
+	line-height: 18px;
+	text-align: left;
+	display:block;
+}
+
+@media (min-width:500px) {
+	#form-subscribe{
+		flex-direction: row;
+	}
+	.text-field-input {
+		margin-right:10px;
+	}
+}
+
+
+.btn-subscribe{
+	position:relative;
+	z-index: 50;
+	display:inline-block;
+	padding:18px 24px;
+	justify-content: center;
+	border-bottom-style:none;
+	background-color:white;
+	color:black;
+	font-size:12px;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	cursor:pointer;
+}
+
+
+@media (max-width: 500px)
+{
+  .subscribe-headline{
+     font-size:80%;
+  }
+  .subscribe-message{
+      font-size:80%
+  }
+}

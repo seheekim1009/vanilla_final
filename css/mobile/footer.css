@@ -33,9 +33,6 @@
     .footer-col:nth-child(3){
         order: 2;
     }
-    .footer-first-column {
-        text-align: center;
-    }
     .address {
         display: none;
     }

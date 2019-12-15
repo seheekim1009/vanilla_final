@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Vanilla Dream</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/web/style.css">
     <link rel="stylesheet" href="css/web/detail.css">

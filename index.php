@@ -63,7 +63,7 @@
 
                     <div class="container-product-list">
                         <div class="container-product-list-w-items">
-                            <div class="row">
+                            <div class="item-row">
                             <?
                                 $query_string = "SELECT * FROM `products` WHERE isBest=1" ;
                                 $result = $conn -> query($query_string);

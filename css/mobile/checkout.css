@@ -7,8 +7,6 @@
         margin-left:auto;
         padding-top:60px;
         padding-bottom:50px;
-        padding-left: 24px;
-        padding-right: 24px;
         font-size:16px;
         line-height: 22px;
         align-items:center;
@@ -19,12 +17,12 @@
         align-items: flex-end;
         height:100%;
         max-width:1200px;
-        padding-left: 24px;
-        padding-right: 24px;
         font-size:16px;
         margin-right: auto;
         margin-left: auto;
-        border:2px solid blue;  
+        border:2px solid blue; 
+        padding-left: 24px;
+        padding-right: 24px; 
     }
     .column-labels {
         display: flex;
@@ -43,7 +41,7 @@
     }
     .product-image,
     .item-image{
-        width: 15%;
+        width: 20%;
         display: flex; align-items: center;
     }
     .item-image img{
@@ -57,22 +55,23 @@
     }
     .product-price,
     .item-price{
-        width: 15%;
-        display: flex; align-items: center;
-    }
-    .product-quantity,
-    .item-quantity{
-        width: 15%;
-        display: flex; align-items: center;
-    }
-    .product-line-price,
-    .subtotal{
         width: 25%;
         display: flex; align-items: center;
     }
-    .item-total{
-        display: flex; align-items: center;
+    .product-quantity {
+        width: 25%;
+    }
+    .item-quantity{
         width: 10%;
+        display: flex; align-items: center;
+        justify-content: center;
+    }
+    .product-line-price,
+    .subtotal{
+        display: none;
+    }
+    .item-total{
+        display: none;
     }
     .item-remove{
         display: flex; align-items: center;
@@ -88,7 +87,7 @@
         flex-direction: column;
         border:1px solid red;
         clear: both;
-        width:25%;
+        width:100%;
         margin-top: 20px;
     }   
     .total{
@@ -106,7 +105,7 @@
         display:flex;
         flex:1;
         flex-direction:column;
-        align-items: right;
+        align-items: flex-end;
         clear: both;
         width: 21%;
     

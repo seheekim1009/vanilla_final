@@ -1,19 +1,23 @@
 
 <html>
 <?php include "header.php"; ?>
+<?php include_once "db_connect.php";
+?>
+
 <body>
     <div class="page-wrapper">
     
     <?php include "navigation.php";?>
 
     <?php include "navbar.php";?>
-        <!-- <div id="search-container">
+        
+    <div id="search-container">
             <div class="search-field">
                 <input id="search" class="search-field-input" type="text" placeholder="search..">
                 <div id="search-button">search</div>
             </div>
-        </div>
-        <section id="header" class="home-section">
+        </div> 
+        <!-- <section id="header" class="home-section">
             <div class="container-navbar">
                 <div class="burger-wrap" id="hamburger">
                     <img src="image/hamburger.png" class="hamburger" alt="logo">
@@ -33,7 +37,8 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section> --> 
+
 
         <!------------- Image Slider------------>
         <div class="carousel">
@@ -77,16 +82,23 @@
             </div>
             <div class="btn-container">
                 <a class="btn" href="ourstory.php">Read More</a>
-            </div>g
+            </div>
         </section>
 
 
-        <!-------------- Best Sellers ------------------>
-        <div class="container-product-list">
-      <div class="container-product-list-w-items">
-      <div class="item-row">
-        <?
-        $query_string = "SELECT * FROM `products` ORDER BY `productName` ASC" ;
+
+        <!-------------Best Sellers------------>
+        <section id="bestseller" class="section-best">
+            <div class="container-best">
+                <div class="section-title-block">
+                    <h2 class="section-title">Best Sellers</h2>
+                </div>
+
+    <div class="container-product-list">
+                    <div class="container-product-list-w-items">
+                        <div class="row">
+                        <?
+        $query_string = "SELECT * FROM `products` WHERE isBest=1" ;
         $result = $conn -> query($query_string);
 
         if($conn->errno) die($conn->error);
@@ -106,25 +118,9 @@
         </div>
       <?
         }?>
-    </div>
-    </div>
-      </div>
 
-        
-
-        <!-------------Best Sellers------------>
-        <section id="bestseller" class="section-best">
-            <div class="container-best">
-                <div class="section-title-block">
-                    <h2 class="section-title">Best Sellers</h2>
-                </div>
-
-                <div class="container-product-list">
-                    <div class="container-product-list-w-items">
-                        <div class="row">
                         </div>
                     </div>
-                </div>
             </div>
         </section>
 

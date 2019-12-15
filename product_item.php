@@ -3,18 +3,6 @@
 include "header_product.php";  
 include_once "db_connect.php";
 $addtocart = $_GET['addtocart'];
-?>
-
-
-<body>
-
-<div class="page-wrapper">
-<?php include "navigation.php";
-include "navbar.php";?>
-
-
-<?php 
-
 if(!isset($_GET['id'])) {
 	echo "You borked it";
 } else {
@@ -34,6 +22,19 @@ if($_GET['addtocart']) {
        }
        // mysqli_close($conn);
 } 
+?>
+
+
+<body>
+
+<div class="page-wrapper">
+<?php include "navigation.php";
+include "navbar.php";?>
+
+
+<?php 
+
+
 
 $query_string = "SELECT * FROM `products` WHERE `id` = '{$_GET['id']}'";
 $result = $conn->query($query_string);
@@ -51,10 +52,7 @@ $result = $conn->query($query_string);
 	// show the data after it's all ready
     ?>
    
- <div class="cart-num-wrapper">
-    <div class="container cart_r">
-   <? while($row1 = $cart_result->fetch_object()){ $cart_total += $row1->cart;
-                        }?><?= $cart_total; ?></div>  </div>
+
 
 <section id="single-product" class="section-single-product">
 <div class="container-item">

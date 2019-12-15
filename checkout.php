@@ -4,7 +4,7 @@
 // include_once "lib/php/print_o.php";
 include_once "db_connect.php";
 $delete = $_POST['delId'];
-
+$delAll = $_POST['delAll']; 
 ?>
 
 <body>
@@ -42,11 +42,24 @@ $result = $conn->query($query_string);
 if($conn->errno) die($conn->error);
 
 }
+
+if($delAll) {
+  $query_string = "UPDATE `products` SET cart = 0";
+  $result = $conn->query($query_string);    
+  if($conn->errno) die($conn->error);
+  ?>
+  <script>
+      alert('상품구매가 완료되었습니다.');
+  </script>
+<?php
+}
+
 // $query_string = "SELECT * FROM `products` WHERE `id` IN(9,13,34)";
 $query_string = "SELECT * FROM `products` WHERE `cart` > 0";
 $result = $conn->query($query_string);
 
 if($conn->errno) die($conn->error);
+$total = 0;
 while($row = $result->fetch_object()){
 	// $amount = rand(2,7);  // amount is random
   ?>
@@ -73,17 +86,30 @@ while($row = $result->fetch_object()){
 
 
  <!------------------Total ---------------------------->
- <div class="container-total">
+
+<?php
+ if($total === 0) {
+  ?>
+  <div class="noitem">No item in cart</div>
+  <?php
+ } else {
+  ?>
+  <div class="container-total">
   <div class="total">
-    <div class="total-label">Subtotal</div> <div class="total-value"> <? $total += $row->price * $row->cart; ?>$<?= $total ?></div>
-    <div class="total-label">Tax (5%)</div> <div class="total-value"> 10% </div>
-    <div class="total-label">Shipping</div> <div class="total-value">   15.00</div>
-    <div class="total-label">Grand Total</div>  <div class="total-value">  </div>
+  <div class="total-label">Subtotal</div> <div class="total-value"> $<?= $total ?></div>
+    <div class="total-label">Tax (5%)</div> <div class="total-value"> $<?= $total*1.05 ?> </div>
+    <div class="total-label">Shipping</div> <div class="total-value">  $15.00</div>
+    <div class="total-label">Grand Total</div> <div class="total-value"> $<?= $total * 1.05 + 15.00 ?> </div>
     
-     <div class="btn-checkout">Checkout </div>
+    <form method="post" class="btn-checkout">
+         <input type="submit" name="submit" class="btn-checkout" value="Checkout">
+         <input type="hidden" name="delAll" value="true">
+           </form>
   </div>    
    </div>
-
+  <?php
+ }
+ ?>
 
 
 </section>

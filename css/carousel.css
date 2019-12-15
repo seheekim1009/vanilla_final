@@ -114,6 +114,10 @@
         width:60%
     }
   
+    .image-container img{
+        width: 60%;
+        height: 30%;
+    }
     #carousel-container .image-container2{
         width:45%;
         height:396;

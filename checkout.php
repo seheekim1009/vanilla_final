@@ -96,17 +96,26 @@ while($row = $result->fetch_object()){
   ?>
   <div class="container-total">
   <div class="total">
-  <div class="total-label">Subtotal</div> <div class="total-value"> $<?= $total ?></div>
-    <div class="total-label">Tax (5%)</div> <div class="total-value"> $<?= $total*1.05 ?> </div>
-    <div class="total-label">Shipping</div> <div class="total-value">  $15.00</div>
-    <div class="total-label">Grand Total</div> <div class="total-value"> $<?= $total * 1.05 + 15.00 ?> </div>
-    
-    <form method="post" class="btn-checkout">
-         <input type="submit" name="submit" class="btn-checkout" value="Checkout">
-         <input type="hidden" name="delAll" value="true">
-           </form>
-  </div>    
-   </div>
+    <div class="total-label">
+      <div>Subtotal</div>
+      <div>Tax (5%)</div>
+      <div>Shipping</div>
+      <div>Grand Total</div>
+    </div>
+    <div class="total-value">
+      <div>$<?= $total ?></div>
+      <div>$<?= $total*0.05 ?></div>
+      <div>$15.00</div>
+      <div>$<?= $total * 1.05 + 15.00 ?></div>
+    </div>
+  </div>
+ </div>
+  <form method="post" class="btn-checkout">
+    <input type="submit" name="submit" class="btn-checkout" value="Checkout">
+      <input type="hidden" name="delAll" value="true">
+  </form>
+
+
   <?php
  }
  ?>

@@ -9,12 +9,6 @@
             }
         ?>
 
-<!-- <div id="search-container">
-            <div class="search-field">
-                <input id="search" class="search-field-input" type="text" placeholder="search..">
-                <div id="search-button">search</div>
-            </div>
-        </div> -->
         <section id="header" class="home-section">
             <div class="container-navbar">
                 <div class="burger-wrap" id="hamburger">
@@ -36,3 +30,9 @@
                 </div>
             </div>
         </section>
+<div id="search-container">
+            <div class="search-field">
+                <input id="search" class="search-field-input" type="text" placeholder="search..">
+                <div id="search-button">search</div>
+            </div>
+        </div> 

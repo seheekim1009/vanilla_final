@@ -1,8 +1,13 @@
 
 <html>
+  
 <?php include "header.php"; ?>
+
 <?php include_once "db_connect.php";
+$search = $_GET['search'];
+
 ?>
+
 
 <body>
     <div class="page-wrapper">
@@ -34,6 +39,13 @@
       <div class="item-row">
         <?
         $query_string = "SELECT * FROM `products` ORDER BY `productName` ASC" ;
+           
+        if($search && strlen($search) > 0) {
+          $query_string = "SELECT * FROM `products` WHERE `productName` LIKE '%". $search ."%' ORDER BY `productName` ASC";
+          
+        }
+
+
         $result = $conn -> query($query_string);
 
         if($conn->errno) die($conn->error);

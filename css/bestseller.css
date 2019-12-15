@@ -90,6 +90,10 @@
 	transform:translateX(0);
 }
 
+.item-row {
+	width: 100%;
+ }
+
 
 @media (max-width:800px)  {
 	.product-description {

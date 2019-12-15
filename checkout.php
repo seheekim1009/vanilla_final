@@ -114,8 +114,8 @@ while($row = $result->fetch_object()){
     <input type="submit" name="submit" class="btn-checkout" value="Checkout">
       <input type="hidden" name="delAll" value="true">
   </form>
-  </div>
-
+ </div>
+ 
   <?php
  }
  ?>

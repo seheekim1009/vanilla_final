@@ -109,12 +109,12 @@ while($row = $result->fetch_object()){
       <div>$<?= $total * 1.05 + 15.00 ?></div>
     </div>
   </div>
- </div>
+
   <form method="post" class="btn-checkout">
     <input type="submit" name="submit" class="btn-checkout" value="Checkout">
       <input type="hidden" name="delAll" value="true">
   </form>
-
+  </div>
 
   <?php
  }

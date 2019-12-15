@@ -1,0 +1,119 @@
+@media(min-width: 481px) {
+    .home-section {
+        background-color: #fff;
+        text-align: center;
+        position: relative;
+        width: 100%;
+        padding: 16px;
+        display: block;
+        overflow: hidden;
+        background: #f9f7f6;
+        z-index: 5;
+    }
+    .container-navbar {
+        padding-right: 16px;
+        padding-left: 16px;
+        margin-top: 16px;
+        display: flex;
+        flex-direction: column;
+        height: 80px;
+        align-items: center;
+        justify-content: center;
+        background-color: transparent;
+    }
+    #menu {
+        display: none;
+        width: 300px;
+        height: 100%;
+        position: fixed;
+        z-index: 101;
+        background-color: white;
+        background: #FBF4E1;
+        border-right: 1px solid black;
+    }
+    .menu-items {
+        padding-top: 74px;
+        padding-left: 16px;
+    }
+    #menu a {
+        display: flex;
+        height: 36px;
+        padding-left: 16px;
+        align-items: center;
+        text-decoration: none;
+        font-weight: 600;
+        color: #D1BEA8;
+    }
+    #menu a:active {
+        color: blue;
+    }
+    #menu a:hover {
+        outline: 0;
+        color: #000
+    }
+    #menu a:visited {
+        text-decoration: none;
+    }
+    .logo-nav {
+        padding-top: 200px;
+        padding-left: 45%;
+    }
+    .burger-wrap {
+        left: 32px;
+        position: absolute;
+    }
+    .hamburger {
+        width: 36px;
+        height: 36px;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+        position: relative;
+        background-color: transparent;
+    }
+    .logo-wrapper img {
+        vertical-align: middle;
+        display: inline-block;
+        height: 40px;
+        max-width: 100%;
+        border: 0;
+    }
+    .nav-icons-wrapper {
+        position: absolute;
+        right: 32px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .search-field-trigger,
+    .cart-wrapper {
+        cursor: pointer;
+        margin-left: 16px;
+    }
+    .search-icon {
+        width: 32px;
+        height: 32px;
+    }
+    .cart-icon {
+        width: 32px;
+        height: 32px;
+    }
+    .arrow-left-icon {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 32px;
+        right: 16px;
+    }
+    .cart-num-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        border-radius: 12px;
+        background: black;
+        color: white;
+    }
+}

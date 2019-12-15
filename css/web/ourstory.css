@@ -1,0 +1,134 @@
+@media(min-width: 481px) {
+    .section-story {
+        background-color: rgb(243, 229, 171);
+        padding-top: 60px;
+        padding-bottom: 60px;
+        font-size: 16px;
+        line-height: 22px;
+        display: block;
+    }
+    .container-story {
+        max-width: 1280px;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 24px;
+        padding-left: 24px;
+        flex: 1 1 0%;
+    }
+    .ourstory-text {
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 2;
+        max-width: 66.66%;
+        margin-right: auto;
+        margin-left: auto;
+        color: rgb(0, 0, 0);
+        text-align: center;
+    }
+    .btn-container {
+        display: flex;
+        padding-top: 24px;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-container a, .btn-container a:active, .btn-container a:visited {
+        text-decoration: none;
+    }
+    .btn {
+        border: none;
+        background-color: white;
+        padding: 18px 24px;
+        font-size: 12px;
+        text-align: center;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition-duration: .4s;
+        color: black;
+    }
+    .btn:hover{
+        background-color:rgba(0,0,0,0.7);
+        color:white
+    }
+    .container-introduction{
+        display:block;
+        margin-right: auto;
+        margin-left: auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-right: 24px;
+        padding-left: 24px;
+        max-width:100%;
+        align-items: center;
+    }
+    .introduction-wrap{
+        display:flex;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 24px;
+        padding-left: 24px;
+        flex:1;
+    }
+    .introduction-photo{
+        width: 35.66666667%;
+        position: relative;
+        float:left;
+        padding-left: 50px;
+        padding-right: 10px;
+        display:block;
+    }
+    .introduction-photo>img {
+        width: 100%;
+    }
+    .introduction-text{
+        padding-left: 24px;
+        padding-right: 24px;
+        position: relative;
+        width: 59.33333333%;
+        display: block;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .container-whyvanilla{
+        display:block;
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 24px;
+        padding-left: 24px;
+        max-width:100%;
+    }
+    .whyvanilla-wrap{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex:1; 
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 80px;
+        padding-left: 80px;
+        padding-top: 50px;
+    }
+    .reason-col{
+        display:block;
+        width:33%;
+        padding:10px;
+        text-align:center;
+    }
+    .reason-image-wrapper{
+        vertical-align: middle;
+        height:120px;
+    }
+    .reason-image-wrapper img{
+        height:120px;
+    }
+    .reason-desc-wrapper{
+        display: block;
+        min-height: 200px;
+    }
+    .reason-title{
+        font-size:20px;
+    }
+    .reason-desc{
+        font-size:14px;
+    }
+}

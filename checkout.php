@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <?php include "header.php"; ?>
 <?php include_once "db_connect.php";?>
 <?php
@@ -125,9 +127,7 @@ while($row = $result->fetch_object()){
 
 </section>
 
-
+<?php include "subscription.php"; ?>
 <?php include "footer.php";?>
-  
-
-
 </body>
+<html>

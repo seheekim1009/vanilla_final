@@ -73,10 +73,12 @@ while($row = $result->fetch_object()){
     <div class="item-quantity"><?= $row->cart ?></div>
     <div class="item-total"> $<?= ($row->price * $row->cart) ?> </div>
     <? $total += $row->price * $row->cart; ?>
-      <form method="post" class="item-remove">
-			<input type="image" name="submit" value="delete" src="image/remove-button.svg">
-			<input type="hidden" name="delId" value="<?= $row->id ?>">
-    </form> 
+    <div class="item-remove">
+              <form method="post" class="image-remove">
+                <input type="image" name="submit" value="delete" src="image/remove-button.svg">
+                <input type="hidden" name="delId" value="<?= $row->id ?>">
+              </form>
+            </div>
  </div>
 
  <?php
@@ -110,12 +112,12 @@ while($row = $result->fetch_object()){
     </div>
   </div>
 
-  <form method="post" class="btn-checkout">
+  <form method="post">
     <input type="submit" name="submit" class="btn-checkout" value="Checkout">
       <input type="hidden" name="delAll" value="true">
   </form>
  </div>
- 
+
   <?php
  }
  ?>

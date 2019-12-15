@@ -21,4 +21,10 @@
     <script src="js/hamburger.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/search.js"></script>
+    <script language="javascript">
+        function btn_click(){
+            alert("Thank You!");
+        }
+</script>
+
 </head>

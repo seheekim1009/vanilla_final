@@ -73,17 +73,42 @@
 	font-size:16px;
 	line-height: 28px;
 	flex-direction: column;
+	
 }
 
 .text-field-input {
 	width:350px;
 	height:54px;
-	border-color:#fff;
-	background-color: transparent;
+	border-color:#F3E5AB;
+	background-color: #fff;
 	font-size:12px;
 	line-height: 18px;
 	text-align: left;
 	display:block;
+	color:#000;
+}
+
+
+.btn-subscribe{
+	position:relative;
+	z-index: 50;
+	display:inline-block;
+	padding:18px 24px;
+	justify-content: center;
+	border-bottom-style:none;
+	background-color:#F3E5AB;
+	color:black;
+	font-size:14px;
+	text-align: center;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	transition-duration: .4s;
+	cursor:pointer;
+}
+
+.btn-subscribe:hover{
+	background-color:rgba(0,0,0,0.7);
+	color:white
 }
 
 @media (min-width:500px) {
@@ -96,21 +121,6 @@
 }
 
 
-.btn-subscribe{
-	position:relative;
-	z-index: 50;
-	display:inline-block;
-	padding:18px 24px;
-	justify-content: center;
-	border-bottom-style:none;
-	background-color:white;
-	color:black;
-	font-size:12px;
-	text-align: center;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	cursor:pointer;
-}
 
 
 @media (max-width: 500px)

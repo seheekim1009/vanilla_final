@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/web/subscription.css">
     <link rel="stylesheet" href="css/web/footer.css">
     
-    <!-- <link rel="stylesheet" href="css/mobile/style.css">
+    <link rel="stylesheet" href="css/mobile/style.css">
     <link rel="stylesheet" href="css/mobile/detail.css">
     <link rel="stylesheet" href="css/mobile/navigation.css">
     <link rel="stylesheet" href="css/mobile/search.css">
@@ -30,7 +30,8 @@
     <link rel="stylesheet" href="css/mobile/product.css">
     <link rel="stylesheet" href="css/mobile/contact.css">
     <link rel="stylesheet" href="css/mobile/subscription.css">
-    <link rel="stylesheet" href="css/mobile/footer.css"> -->
+    <link rel="stylesheet" href="css/mobile/footer.css">
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="js/hamburger.js"></script>
     <script src="js/carousel.js"></script>

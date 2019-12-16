@@ -27,7 +27,7 @@
         display:block;
     }
     .contact-photo img{
-        width:500px;
+        width:100%;
     }
     .contact-text{
         padding-left: 30px;

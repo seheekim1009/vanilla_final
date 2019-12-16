@@ -18,7 +18,7 @@ while ($row = $result->fetch_object()) {
             <img src="image/hamburger.png" class="hamburger" alt="logo">
         </div>
         <a href="index.php" class="logo-wrap">
-            <img src="image/logosmall.svg" class="logo" alt="logo">
+            <img src="image/logosymbol.png" class="logo" alt="logo">
         </a>
         <div class="nav-icons-wrapper">
             <div class="search-field-trigger">

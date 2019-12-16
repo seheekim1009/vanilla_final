@@ -15,7 +15,7 @@
                     <div class="text">
                         <div class="title1">NEW THIS AUTUMN</div>
                         <div class="title2">Don't Wake Me Up<br>I am sleeping</div>
-                        <a class="title3" href="product_item.php?id=4">Discover</a>
+                        <a class="title3" href="product_item.php?id=5">Discover</a>
                     </div>
                     <div class="image-container">
                         <img class="image" src="image/slideimage-1.png">
@@ -25,7 +25,7 @@
                     <div class="text">
                         <div class="title1">BEST SELLER IN OCTOBER</div>
                         <div class="title2">Protect Me<br>From the Monster</div>
-                        <a class="title3" href="product_item.php?id=7">Discover</a>
+                        <a class="title3" href="product_item.php?id=8">Discover</a>
                     </div>
                     <div class="image-container2">
                         <img class="image" src="image/slideimage-2.png">

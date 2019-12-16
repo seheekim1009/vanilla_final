@@ -4,8 +4,7 @@
             <div class="footer-col">
                 <div class="footer-first-column">
                     <div class="footer-logo-wrapper">
-                        <img src="image/logosmall.png" class="logo-small" alt="logo-small">
-                        <img src="image/logofull.png" class="logo-big" alt="logo-big">
+                        <img src="image/logo.png" class="logo-full" alt="logo">
                     </div>
                     <div class="address">
                         <br> 180 New Montgomery<br>

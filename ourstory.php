@@ -77,7 +77,7 @@
 				<img src="image/ourstory/reason3.png">
 				</div>
 				<div class="reason-desc-wrapper">
-				<div class="reason-title">12-items For Sleep </div>
+				<div class="reason-title">Mental Health Classes</div>
 				<div class="reason-desc">
 					Vanilla Dream offers you various classes of yoga, meditation, and other mental health classes with our
 					partners.

@@ -20,7 +20,7 @@
         width:100%;
         line-height: 36px;
         font-weight: 2;
-        max-width: 66.66%;
+        /* max-width: 66.66%; */
         margin-right: auto;
         margin-left: auto;
         color: rgb(0, 0, 0);
@@ -40,7 +40,7 @@
     .btn {
         border: none;
         background-color: white;
-        padding: 18px 24px;
+        padding: 14px 24px;
         font-size: 12px;
         text-align: center;
         letter-spacing: 2px;

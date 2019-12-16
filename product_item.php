@@ -63,13 +63,14 @@ if($_GET['addtocart']) {
         </select>
         <input type="hidden" value="<?= $row->id ?>" name="id">
         <input id="add-to-cart-button" type="submit" value="Add to Cart">
-      </form> 
+     </form> 
           </div>
       <div> 
       </div>
       <?php 
           }?>
   </section>
+
     <?php include "footer.php";?>
   </body>
 </html>

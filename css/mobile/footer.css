@@ -12,6 +12,7 @@
         padding-left: 80px;
         padding-top:20px;
         flex:1;
+        background-color: #ece6cc;
     }
     .footer-col{
         display: flex;
@@ -39,7 +40,7 @@
     .footer-logo-wrapper {
         display: flex;
     }
-    .logo-small{
+    /* .logo-small{
         width: 28px;
         height: 28px;
     }
@@ -47,7 +48,11 @@
         padding-left:5px;
         width:200px;
         height: 28px;	
-    } 
+    }  */
+    .logo-full{
+        width:200px;
+        height:28px;
+    }
     .copyright{
         position:relative;
         text-align:center;

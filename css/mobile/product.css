@@ -42,6 +42,7 @@
 	}
 	.item-name{
 		font-size:16px;
+		width:100%;
 	}
 	#add-to-cart-text{
 	height: 35px;
@@ -49,10 +50,16 @@
 	border:1px solid gray;
 	}
 	#add-to-cart-button{
-		background-color:black;
+		background-color:#392f31;
+		width:100px;
+		height:40px;
 		color:#fff;
 		padding: 10 15;
 		text-transform:uppercase;
+	}
+	#add-to-cart-button:hover{
+		background-color:D1BEA8;
+        color:white;
 	}
 	.container-item-detail{
 		display:flex;
@@ -89,5 +96,6 @@
 	.label-item-detail{
 		color: #D1BEA8;
 		padding-top:20px;
+		padding-bottom:20px;
 	}
 }

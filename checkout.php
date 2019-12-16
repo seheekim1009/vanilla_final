@@ -19,8 +19,8 @@ $delAll = $_POST['delAll'];
     <!------------- Page-Heading----------->
 
 <section id="checkout" class="section-checkout">
-    <div class="section-title-block">
-        <h2 class="section-title">Your Shopping List</h2>
+    <div class="section-title-block-checkout">
+        <h2 class="section-title-checkout">Your Shopping List</h2>
     </div>
 
     <!--------------Contents-------------------->
@@ -51,7 +51,7 @@ if($delAll) {
   if($conn->errno) die($conn->error);
   ?>
   <script>
-      alert('상품구매가 완료되었습니다.');
+      alert('Your Order Complete!');
   </script>
 <?php
 }
@@ -70,7 +70,7 @@ while($row = $result->fetch_object()){
 
 <div class="container-cart-item">
     <div class="item-image"><img src="image/product/<?= $row->image ?>"></div>
-    <div class="item-name"><?= $row->productName ?></div>
+    <div class="item-name-checkout"><?= $row->productName ?></div>
     <div class="item-price">$<?= $row->price ?></div>
     <div class="item-quantity"><?= $row->cart ?></div>
     <div class="item-total"> $<?= ($row->price * $row->cart) ?> </div>
@@ -104,13 +104,13 @@ while($row = $result->fetch_object()){
       <div>Subtotal</div>
       <div>Tax (5%)</div>
       <div>Shipping</div>
-      <div>Grand Total</div>
+      <div class="grand-total-label">Grand Total</div>
     </div>
     <div class="total-value">
       <div>$<?= $total ?></div>
       <div>$<?= $total*0.05 ?></div>
       <div>$15.00</div>
-      <div>$<?= $total * 1.05 + 15.00 ?></div>
+      <div class="grand-total-value">$<?= $total * 1.05 + 15.00 ?></div>
     </div>
   </div>
 

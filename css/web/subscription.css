@@ -3,7 +3,7 @@
 	.section-subscribe{
 		background-color: #363636;
 		padding-top:40px;
-		padding-bottom:50px;
+		padding-bottom:80px;
 		font-size:16px;
 		line-height: 22px;
 		display:block;
@@ -68,7 +68,6 @@
 	.text-field-input {
 		width:350px;
 		height:54px;
-		border-color:#F3E5AB;
 		background-color: #fff;
 		font-size:12px;
 		line-height: 18px;
@@ -84,7 +83,7 @@
 		padding:18px 24px;
 		justify-content: center;
 		border-bottom-style:none;
-		background-color:#F3E5AB;
+		background-color:#fff;
 		color:black;
 		font-size:14px;
 		text-align: center;
@@ -95,6 +94,6 @@
 	}
 	.btn-subscribe:hover{
 		background-color:rgba(0,0,0,0.7);
-		color:white
+        color:white;
 	}
 }

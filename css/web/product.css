@@ -27,7 +27,7 @@
 		max-height:500px;
 	}
 	.item-photo img{
-		max-width:480px;
+		width:100%;
 	}
 	.item-box{
 		padding-left:60px;
@@ -58,13 +58,21 @@
 		background-color:#D1BEA8;
         color:white;
 	}
-	/* .back{
-		display:flex;
+	.continue-btn{
+		font-size:16px;
+		color:gray;
+	}
+	.continue-btn a{
 		text-decoration: none;
 	}
-	.arrow-right{
-		width:20px;
-	} */
+	.continue-btn a:visited{
+		color:gray;
+	}
+	.continue-btn:hover{
+		color:#392f31;
+	}
+
+
 	.container-item-detail{
 		display:flex;
 		flex:1;

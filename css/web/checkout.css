@@ -97,7 +97,7 @@
         flex-direction: column;
         border: 2px solid #D1BEA8;
         clear: both;
-        width: 25%;
+        width: 40%;
         margin-top: 20px;
     }    
     .total {
@@ -147,4 +147,15 @@
         background-color:#363636;
         color: white;
     }
+    .footers{
+        display:flex;
+        flex-direction: column;
+        Justify-content: flex-end;
+        height:100%;
+    }
 }
+
+
+
+
+

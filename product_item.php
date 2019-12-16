@@ -38,7 +38,6 @@ if($_GET['addtocart']) {
   <section id="single-product" class="section-single-product">
   <div class="container-item">
       <div class="item-photo"><img src="image/product/<?= $row->image ?>"></div>
-      
       <div class="item-box">
           <div class="item-name"> <h1><?= $row->productName ?></h1></div>
           <div class="label-desc">Description</div>
@@ -53,7 +52,7 @@ if($_GET['addtocart']) {
           <div class="item-price"><div class="price">$<?= $row->price ?></div> </div>
           <div class="label-quantity">Quantity</div>
           <div class="add-to-cart">
-            <form method="get">
+            <form method="get" class="btns">
         <select name="addtocart" id="add-to-cart-text">
           <option value="1">1</option>
           <option value="2">2</option>
@@ -62,14 +61,14 @@ if($_GET['addtocart']) {
           <option value="5">5</option>
         </select>
         <input type="hidden" value="<?= $row->id ?>" name="id">
-        <input id="add-to-cart-button" type="submit" value="Add to Cart">
-     </form> 
-          </div>
+        <input id="add-to-cart-button" type="submit" value="Add to Cart"></form>
       <div> 
-      </div>
       <?php 
           }?>
+          <a class="back" href="product_list.php">Continue Shopping>> </a>
+          </div>
   </section>
+     
 
     <?php include "footer.php";?>
   </body>

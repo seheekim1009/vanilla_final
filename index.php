@@ -89,7 +89,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>  
         <?php include "subscription.php"; ?>
         <?php include "footer.php"; ?>
     </body>

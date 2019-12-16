@@ -102,6 +102,8 @@
     .introduction-title{
         font-size:30px;
         padding-bottom:20px;
+        color: rgb(243, 229, 171);
+        font-weight:600;
     } 
     .container-whyvanilla{
         display:block;

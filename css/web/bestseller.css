@@ -43,6 +43,7 @@
     .product-item:hover .product-description {
         transform: translateY(0);
         transition: all 0.15s;
+        height:100%;
         text-decoration: none;
     }
     .product-title {

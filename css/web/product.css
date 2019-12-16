@@ -111,4 +111,10 @@
 		padding-top:10px;
 		padding-bottom:10px;
 	}
+	.footers{
+        display:flex;
+        flex-direction: column;
+        Justify-content: flex-end;
+        height:100%;
+    }
 }

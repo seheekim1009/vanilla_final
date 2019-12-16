@@ -69,7 +69,9 @@ if($_GET['addtocart']) {
           </div>
   </section>
      
-
+  <div class="footers">
+    <?php include "subscription.php"; ?>
     <?php include "footer.php";?>
+  </div>
   </body>
 </html>
